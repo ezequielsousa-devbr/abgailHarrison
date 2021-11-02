@@ -22,7 +22,11 @@ body {
       font-family: 'Ubuntu', sans-serif;
       font-size: 75px;
       margin: 130px 30px;
-      text-shadow: 10px -2px rgba(25,25,25,0.3);
+      text-shadow: 10px -2px rgba(25,25,25,0.1);
+      /*background: -webkit-linear-gradient(hsl(354, 71, 47), hsl(350, 9, 13));
+      -webkit-background-clip: text;
+      -webkit-background: linear-gradient(to left, hsl(354, 71, 47), hsl(350, 9, 13));
+      -webkit-text-fill-color: transparent;*/
     }
 
     .section {
@@ -32,12 +36,13 @@ body {
       margin-bottom: 10px;
     }
 
-    picture img {
+    .section picture img {
       border-radius: 50%;
       width: 450px; height: auto;
+      border: 5px solid #000;
     }
 
-    picture .line::before {
+    .section picture .line::before {
       display: block;
       position: relative;
       left: 30%; right: 0px;
@@ -47,7 +52,7 @@ body {
       background-color: #000;
     }
 
-    picture .line h2 {
+    .section picture .line h2 {
       display: inline-block;
       position: relative;
       left: 56%; right: auto;
@@ -57,7 +62,7 @@ body {
       text-transform: uppercase;
     }
 
-    .article-1 {
+    .section .article-1 {
       display: block;
       width: 720px; height: auto;
       position: relative;
@@ -69,7 +74,7 @@ body {
       font-weight: 500;
     }
 
-    .article-2 {
+    .section .article-2 {
       display:  inline-block;
       width: 390px; height: auto;
       position: relative;
@@ -86,7 +91,7 @@ body {
     }
 
     .figure-img-footer img {
-      width: 250px; height: auto;
+      width: 350px; height: auto;
       border-radius: 10px;
     }
 
@@ -95,26 +100,26 @@ body {
       height: 512px;
     }
 
-    .column-footer {
+    .column-foo {
       display: block;
       width: 800px; height: auto;
       padding: 10px auto;
       margin: auto auto auto 75px;
     }
 
-    .column-footer h4 {
+    .column-foo h4 {
       font-family: 'Ubuntu', sans-serif;
-      font-size: 30px;
+      font-size: 40px;
       text-align: left;
       margin: 20px auto;
     }
 
-    .column-footer p {
+    .column-foo p {
       font-family: 'Fira Sans', sans-serif;
       font-size: 18px;
     }
 
-    .footer-container {
+    .foo-container {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
